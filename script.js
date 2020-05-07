@@ -16,7 +16,7 @@ class Calculator {
     }
 
     appendNumber(number) {
-        if (number === '.' && this.currentOperand.includes('.')) return
+        if (number === '.' && this.currentOperand.includes('.')) return;
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
@@ -36,7 +36,7 @@ class Calculator {
 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
-const AllClearButton = document.querySelector('[data-all-clear]')
+const allclearbutton = document.querySelector('[data-all-clear]')
 const deleteButton = document.querySelector('[data-delete]')
 const equalsButton = document.querySelector('[data-equals]')
 const previousOperandTextElement = document.querySelector('[data-previous-operand]')
